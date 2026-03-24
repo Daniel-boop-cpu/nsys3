@@ -1,0 +1,84 @@
+/* Сброс базовых стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для тела документа */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт для Windows */
+    background-color: #1a1a1a; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для контейнера */
+body > * {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(30, 30, 30, 0.9); /* Блок с немного прозрачным фоном */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 10px auto; /* Центрируем и добавляем отступы */
+}
+
+/* Заголовок */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Зелёный цвет для заголовка */
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Лёгкое свечение */
+}
+
+/* Абзацы */
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Ссылки */
+a {
+    color: #2196F3; /* Синий цвет ссылок */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Ссылка для скачивания */
+a[href*="drive.google.com"] {
+    background-color: #FF9800; /* Оранжевый для кнопки скачивания */
+    color: white;
+}
+
+a[href*="drive.google.com"]:hover {
+    background-color: #f57c00; /* Более тёмный оранжевый при наведении */
+    color: white;
+}
+
+/* Ссылка для справки */
+a[href="assets/help.htm"] {
+    color: #9E9E9E; /* Сероватый цвет для ссылки на справку */
+}
+
+a[href="assets/help.htm"]:hover {
+    background-color: #9E9E9E;
+    color: black;
+}
